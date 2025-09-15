@@ -16,7 +16,7 @@ while True:
     try:
         dollar = float(value)
         rupee, pound, yuan = convert_currency(dollar)
-        print(f"\nDollar ($)\tIndian Rupee (₹)\tBritish Pound (£)\tChinese Yuan (¥)")
-        print(f"{dollar:.2f}\t\t{rupee:.2f}\t\t{pound:.2f}\t\t{yuan:.2f}\n")
+        print(f"\n{'Dollar ($)':<15}{'Indian Rupee (₹)':<20}{'British Pound (£)':<20}{'Chinese Yuan (¥)':<20}")
+        print(f"{dollar:<15.2f}{rupee:<20.2f}{pound:<20.2f}{yuan:<20.2f}\n")
     except ValueError:
         print("Invalid input, please enter a number or * to exit.\n")
